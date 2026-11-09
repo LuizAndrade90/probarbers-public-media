@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Sete vídeos ProBarbers para assistir e baixar no celular.">
+<meta property="og:title" content="ProBarbers · Vídeos do Felipe">
+<meta property="og:description" content="Sete vídeos para assistir, comparar e baixar em MP4.">
+<meta property="og:url" content="https://luizandrade90.github.io/probarbers-public-media/felipe-hibridos/">
+<meta property="og:image" content="https://luizandrade90.github.io/probarbers-public-media/felipe-hibridos/posters/agendamento.jpg">
+<link rel="canonical" href="https://luizandrade90.github.io/probarbers-public-media/felipe-hibridos/">
+<title>ProBarbers · Vídeos do Felipe</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f8f5ef;color:#182233;font:16px/1.4 system-ui,-apple-system,sans-serif}
+main{max-width:1050px;margin:auto;padding:clamp(18px,4vw,48px)}
+header{margin-bottom:20px}
+.brand{display:flex;align-items:center;gap:9px;font-size:21px;font-weight:850;letter-spacing:-.6px}
+.brand img{width:34px;height:34px;border-radius:7px}
+.brand em{color:#a44218;font-style:normal}
+h1{margin:13px 0 4px;font-size:clamp(30px,6vw,50px);line-height:1.05;letter-spacing:-.045em}
+h2{font-size:clamp(22px,4vw,29px);letter-spacing:-.025em;line-height:1.13;margin:0}
+p{margin:6px 0;color:#4d5a6c}
+.layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.8fr);gap:17px;align-items:start}
+.viewer,.playlist{background:#fffdf9;border:1px solid #e5ddd3;border-radius:18px;padding:clamp(12px,3vw,21px)}
+.viewer-head{max-width:450px;margin:auto}
+.version{display:flex;gap:5px;align-items:center;background:#f2eee8;padding:4px;border-radius:13px;margin:12px 0 10px}
+.version button{flex:1;min-height:42px;border:0;border-radius:9px;background:transparent;color:#354358;font:inherit;font-weight:700;cursor:pointer}
+.version button[aria-pressed=true]{background:#fff8ee;color:#86370f;box-shadow:0 1px 3px #3c272819}
+video{display:block;margin:auto;width:min(100%,335px,53svh);aspect-ratio:9/16;height:auto;border:1px solid #eadfd4;border-radius:11px;background:#f4ece1;object-fit:contain}
+.actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:11px;margin-top:12px}
+.download{min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#ffa978;color:#331c13;font-weight:800;text-decoration:none;border-radius:11px;padding:9px 17px}
+.duration{font-size:14px;color:#4d5a6c}
+.status{margin-top:8px;font-size:14px;text-align:center}
+.status:empty{display:none}
+.playlist h2{margin-bottom:11px}
+.playlist ol{display:grid;gap:5px;list-style:none;padding:0;margin:0}
+.playlist a{display:grid;grid-template-columns:30px 1fr auto;align-items:center;gap:7px;min-height:50px;padding:8px 10px;border-radius:10px;border:1px solid transparent;color:#263446;font-weight:680;text-decoration:none}
+.playlist a[aria-current=true]{background:#fff0e3;border-color:#f1d3be;color:#843b1a}
+.playlist small,.number{font-size:13px;color:#596579}
+:focus-visible{outline:3px solid #aa4b1f;outline-offset:3px}
+@media(max-width:650px){
+ .layout{grid-template-columns:1fr;gap:12px}
+ header{margin-bottom:13px}
+ .viewer,.playlist{padding:12px}
+ .viewer-head p{font-size:14px}
+ video{width:min(100%,335px,31svh)}
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand"><img src="marca.png" alt=""><span>Pro<em>Barbers</em></span></div>
+    <h1>Vídeos do Felipe</h1>
+    <p>Sete cortes para assistir, comparar e baixar.</p>
+  </header>
+  <div class="layout">
+    <section class="viewer" id="assistir" aria-labelledby="titulo-video">
+      <div class="viewer-head">
+        <h2 id="titulo-video">Agendamento sem aplicativo</h2>
+        <p id="resumo-video">O cliente marca pelo link e o horário aparece na agenda.</p>
+        <div class="version" role="group" aria-label="Versão do vídeo">
+          <button type="button" data-version="hybrid" aria-pressed="true">Híbrido</button>
+          <button type="button" data-version="original" aria-pressed="false">Original</button>
+        </div>
+      </div>
+      <video id="player" controls playsinline preload="metadata" aria-label="Agendamento sem aplicativo · Híbrido" poster="posters/agendamento.jpg" src="media/ProBarbers-Felipe-Hibrido-Final.mp4"></video>
+      <div class="actions">
+        <a id="baixar" class="download" href="media/ProBarbers-Felipe-Hibrido-Final.mp4" download>Baixar MP4 híbrido ↓</a>
+        <span class="duration" id="duracao">38,2 s</span>
+      </div>
+      <p class="status" id="status" role="status"></p>
+    </section>
+    <nav class="playlist" aria-label="Escolher um vídeo">
+      <h2>Todos os vídeos</h2>
+      <ol><li><a data-video="agendamento" href="?video=agendamento" aria-current="true"><span class="number">01</span><span>Agendamento sem aplicativo</span><small>38,2 s</small></a></li>
+<li><a data-video="equipe" href="?video=equipe"><span class="number">02</span><span>Comunicação com a equipe</span><small>36,0 s</small></a></li>
+<li><a data-video="reagendamento" href="?video=reagendamento"><span class="number">03</span><span>Reagendamento e cancelamento</span><small>36,7 s</small></a></li>
+<li><a data-video="crescimento" href="?video=crescimento"><span class="number">04</span><span>Relatórios · Crescimento real</span><small>38,2 s</small></a></li>
+<li><a data-video="previsibilidade" href="?video=previsibilidade"><span class="number">05</span><span>Relatórios · Previsibilidade</span><small>40,7 s</small></a></li>
+<li><a data-video="assinaturas" href="?video=assinaturas"><span class="number">06</span><span>Assinaturas · Felipe</span><small>40,5 s</small></a></li>
+<li><a data-video="pacotes" href="?video=pacotes"><span class="number">07</span><span>Pacotes · Próximas visitas</span><small>43,7 s</small></a></li></ol>
+    </nav>
+  </div>
+</main>
+<script type="application/json" id="videos">[{"id": "agendamento", "title": "Agendamento sem aplicativo", "summary": "O cliente marca pelo link e o horário aparece na agenda.", "duration": 38.2, "hybrid": {"url": "media/ProBarbers-Felipe-Hibrido-Final.mp4", "poster": "posters/agendamento.jpg"}, "original": {"url": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/media/ProBarbers-03-agendamento-felipe.mp4", "poster": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/posters/03-agendamento-felipe.jpg"}}, {"id": "equipe", "title": "Comunicação com a equipe", "summary": "Agenda do dia e novos horários chegam no WhatsApp do barbeiro.", "duration": 36.033333, "hybrid": {"url": "media/ProBarbers-Felipe-Comunicacao-Equipe-Hibrido.mp4", "poster": "posters/equipe.jpg"}, "original": {"url": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/media/ProBarbers-05-equipe-felipe.mp4", "poster": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/posters/05-equipe-felipe.jpg"}}, {"id": "reagendamento", "title": "Reagendamento e cancelamento", "summary": "O cliente recebe o aviso quando o horário muda ou é cancelado.", "duration": 36.733333, "hybrid": {"url": "media/ProBarbers-Felipe-Reagendamento-Cancelamento-Hibrido.mp4", "poster": "posters/reagendamento.jpg"}, "original": {"url": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/media/ProBarbers-06-reagendamento-felipe.mp4", "poster": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/posters/06-reagendamento-felipe.jpg"}}, {"id": "crescimento", "title": "Relatórios · Crescimento real", "summary": "Compare atendimentos e faturamento no resumo semanal.", "duration": 38.166667, "hybrid": {"url": "media/ProBarbers-Felipe-Relatorios-Crescimento-Hibrido.mp4", "poster": "posters/crescimento.jpg"}, "original": {"url": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/media/ProBarbers-07-relatorios-felipe-crescimento.mp4", "poster": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/posters/07-relatorios-felipe-crescimento.jpg"}}, {"id": "previsibilidade", "title": "Relatórios · Previsibilidade", "summary": "Veja como acompanhar o faturamento antes do fechamento do mês.", "duration": 40.733333, "hybrid": {"url": "media/ProBarbers-Felipe-Relatorios-Previsibilidade-Hibrido.mp4", "poster": "posters/previsibilidade.jpg"}, "original": {"url": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/media/ProBarbers-07-relatorios-felipe-previsibilidade.mp4", "poster": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/posters/07-relatorios-felipe-previsibilidade.jpg"}}, {"id": "assinaturas", "title": "Assinaturas · Felipe", "summary": "Monte um clube e estime a receita mensal das assinaturas.", "duration": 40.533333, "hybrid": {"url": "media/ProBarbers-Felipe-Assinaturas-Hibrido.mp4", "poster": "posters/assinaturas.jpg"}, "original": {"url": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/media/ProBarbers-V2-03-assinaturas-felipe.mp4", "poster": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/posters/03-assinaturas-felipe.jpg"}}, {"id": "pacotes", "title": "Pacotes · Próximas visitas", "summary": "Veja como a barbearia e o cliente acompanham saldo e validade.", "duration": 43.7, "hybrid": {"url": "media/ProBarbers-Felipe-Pacotes-Hibrido.mp4", "poster": "posters/pacotes.jpg"}, "original": {"url": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/media/ProBarbers-V2-01-pacotes.mp4", "poster": "https://luizandrade90.github.io/probarbers-public-media/videos-neto-felipe/posters/01-pacotes.jpg"}}]</script>
+<script>
+const videos = JSON.parse(document.querySelector('#videos').textContent);
+const player = document.querySelector('#player');
+const title = document.querySelector('#titulo-video');
+const summary = document.querySelector('#resumo-video');
+const download = document.querySelector('#baixar');
+const duration = document.querySelector('#duracao');
+const status = document.querySelector('#status');
+const buttons = [...document.querySelectorAll('[data-version]')];
+const links = [...document.querySelectorAll('[data-video]')];
+const format = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 });
+let item = videos[0];
+let version = 'hybrid';
+let pendingTime = null;
+
+function show(next, selected, rememberTime) {
+  const position = rememberTime ? (pendingTime ?? player.currentTime) : 0;
+  item = next;
+  version = selected;
+  const media = item[version];
+  const hybrid = version === 'hybrid';
+  const versionLabel = hybrid ? 'Híbrido' : 'Original';
+  title.textContent = item.title;
+  summary.textContent = item.summary;
+  duration.textContent = format.format(item.duration) + ' s';
+  status.textContent = '';
+  player.setAttribute('aria-label', item.title + ' · ' + versionLabel);
+  download.textContent = hybrid ? 'Baixar MP4 híbrido ↓' : 'Baixar MP4 original ↓';
+  download.href = media.url;
+  download.download = media.url.split('/').pop();
+  for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.version === version));
+  for (const link of links) {
+    if (link.dataset.video === item.id) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  }
+  if (player.src !== new URL(media.url, location.href).href) {
+    player.pause();
+    pendingTime = position > 0 ? position : null;
+    player.poster = media.poster;
+    player.src = media.url;
+    player.load();
+  }
+}
+
+player.addEventListener('loadedmetadata', () => {
+  if (pendingTime === null || player.currentSrc !== player.src) return;
+  player.currentTime = Math.min(pendingTime, Math.max(0, player.duration - 0.1));
+  pendingTime = null;
+});
+player.addEventListener('error', () => {
+  status.textContent = 'O vídeo não carregou no player. Você pode baixar o MP4.';
+});
+
+for (const button of buttons) {
+  button.addEventListener('click', () => {
+    if (button.dataset.version !== version) show(item, button.dataset.version, true);
+  });
+}
+
+function requestedVideo() {
+  const id = new URLSearchParams(location.search).get('video');
+  return videos.find(video => video.id === id) ?? videos[0];
+}
+
+for (const link of links) {
+  link.addEventListener('click', event => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+    event.preventDefault();
+    const next = videos.find(video => video.id === link.dataset.video);
+    if (next.id !== item.id) {
+      history.pushState({}, '', link.href);
+      show(next, 'hybrid', false);
+    }
+    title.scrollIntoView({block:'start'});
+  });
+}
+
+window.addEventListener('popstate', () => show(requestedVideo(), 'hybrid', false));
+show(requestedVideo(), 'hybrid', false);
+</script>
+</body>
+</html>
